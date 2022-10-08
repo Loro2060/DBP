@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejemplo1</title>
+  </head>
+  <body>
+  
+    <form action="{{ url_for('hello') }}" method="post">
+        <input type="text" name="name" placeholder="ingresa tu nombre">
+		<p>Cuando naciste?</p>
+		<input type="time" name="fn" placeholder="ingresa tu fecha de nacimiento">
+		
+		<p>A que te dedicas?</p>
+		<input type="text" name="job" placeholder="ingresa tu ocupacion">
+		
+		<p>Ingresa tu contacto</p>
+        <input type="email" name="contact" id = "contacto" placeholder="Email">
+		<input type="text" name="tel" id = "telefono" placeholder="Telefono">
+		
+		<p>De donde eres?</p>
+        <select width = 300 style="width: 350px" size=9 name="Pais" id="pais">
+				<option value="Peru">Peru</option>
+				<option value="USA">USA</option>
+				<option value="Japon">Japon</option>
+				<option value="Turquia">Turquia</option>
+				<option value="Brazil">Brazil</option>
+				<option value="Alemania">Alemania</option>
+			</select>
+			
+		
+		<p>Ingresa tu nivel de ingles </p>
+			<div>
+			<input type="radio" name="ingles" id = "Basico" value= "basico"checked>
+			<label for="basico">Basico</label>
+			</div>
+			
+			<div>
+			<input type="radio" name="ingles" id = "Intermedio" value= "intermedio"checked>
+			<label for="intermedio">Intermedio</label>
+			</div>
+			
+			<div>
+			<input type="radio" name="ingles" id = "Avanzado" value= "avanzado"checked>
+			<label for="avanzado">Avanzado</label>
+			</div>
+			
+			<p>Que lenguajes de programacion conoces?</p>
+			<select width = 300 style="width: 350px" size=9 name="Lenguajes" id="Lenguajes-programacion" multiple>
+				<option value="C++">C++</option>
+				<option value="C">C</option>
+				<option value="C#">C#</option>
+				<option value="Python">Python</option>
+				<option value="JavaScript">JavaScript</option>
+				<option value="Haskell">Haskell</option>
+			</select>
+			
+			<p>Que habilidades tienes?</p>
+			<input list="lista-de-aptitudes" name="aptitudes" id="Aptitudeselegidas">
+			<datalist id="lista-de-aptitudes">
+				<option value="Inteigencia emocional">
+				<option value="Espiritu critico">
+				<option value="Trabajo en equipo">
+				<option value="Capacidad analitica">
+				<option value="Habilidades fisicas">
+			</datalist>
+			
+			<p>Que habilidades tienes? </p>
+				<div>
+					<input type="checkbox" name="habilidades" id="Dibujar">
+					<label for="dibujar">Dibujo</label>
+				</div>
+		
+				<div>
+					<input type="checkbox" name="habilidades" id="Escribir">
+					<label for="escribir">Escribir</label>
+				</div>
+			<p>Dinos algo mas sobre ti</p>	
+			<textarea id = "Per" name="per" rows = "5" cols = "33">
+			</textarea>
+			<p> </p>
+		
+		<button>Submit</button>
+    </form>
+	
+  </body>
+</html>
