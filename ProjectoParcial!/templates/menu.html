@@ -1,0 +1,80 @@
+<html>
+	<head>
+	
+		<title>Cv</title>
+		
+		<link rel = "stylesheet" href = "{{ url_for('static', filename = "menu.css")}}">
+		
+		<script src = "{{ url_for('static', filename = 'jsn.js') }}"></script>
+		
+	</head>
+	<body>
+	
+	<div id = "eltodo">
+	
+		<form action = "{{url_for('hello')}}" method = "post" name = "form_action">
+			
+				<p>Cual es tu nombre?<p>
+					<input 	type = "text" name = "name" id = "Nombre" placeholder = "Introduce tu nombre...">
+					<span id = "tag1"> </span>
+
+				<p>Cuando naciste?</p>
+					<input 	type = "date" id = "Fecha" name = "fecha" >
+					<span id = "tag2"> </span>
+
+				<p>A que te dedicas?</p>
+					<input 	type  = "text" name = "ocupacion" id = "Ocupacion"  placeholder = "Dinos algo sobre ti">
+					<span id = "tag5"> </span>
+
+				<p>Contacto</p>
+					<input 	type = "text" name = "telf" id = "Numero" placeholder = "telefono">
+					<span id = "tag3"> </span>
+					<input 	type = "email" name = "email" id = "Email" placeholder = "email">
+					<span id = "tag4"> </span>
+
+				<p>De donde eres?</p>
+				<select id = "Pais" name = "Pais">
+					<option value = "Peru">Peru</option>
+					<option value = "Japon">Turquia</option>
+					<option value = "Japon">Japon</option>
+					<option value = "Alemania">Alemania</option>
+				</select>
+				
+
+				<p>Nivel de ingles: </p>
+				<input 	type = "radio" name = "Ingles" checked>Basico
+				<input 	type = "radio" name = "Ingles" checked>Intermedio
+				<input 	type = "radio" name = "Ingles" checked>Avanzado
+
+				<p>Que lenguajes conoces? </p>	
+				
+				<select id = "Lenguajes" name = "lenguajes" multiple>
+
+					<option value = "Japones">Japones</option>
+					<option value = "Turco">Turco</option>
+					<option value = "Aleman">Aleman</option>
+					<option value = "Sanscrito">Sanscrito</option>
+
+				  </select>
+				<input 	type = "hidden" id = "lang" name = "lang" value = "Japones">
+				<span id = "lenguajes"> </span>
+
+				<p>Habilidades</p>
+				
+					<input 	type = "checkbox" id = "Dibujar" name = "Dibujar" value = "Dibujar">
+					<label for = "Dibujar">Dibujar</label>
+					
+					<input 	type = "checkbox" id = "Meditar" name = "Meditar" value = "Meditar">
+					<label for = "Meditar">Meditar</label>
+					<span id = "habilidades"> </span>
+
+				<p>Perfil</p>
+				<textarea id = "Perfil" name = "Perfil" rows = "10" cols = "40"></textarea>
+				<span id = "perfil"></span>
+				
+				<input 	type = "button" onclick = "crear()" value = "Submit">
+			</form>
+			</div>
+		</div>
+	</body>	
+</html>
