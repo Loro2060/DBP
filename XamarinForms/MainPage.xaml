@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+    <ScrollView>
+        <StackLayout>
+            
+            <StackLayout Orientation="Vertical">
+                <Label Text="Name:" x:Name = "nombre" />
+                <Entry Placeholder="Ingresa tu nombre" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Vertical" >
+                <Label Text="Age:" x:Name="Edad"/>
+                <Entry Placeholder="Ingresa tu edad" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Vertical" x:Name="ocupation">
+                <Label Text="Occupation:" />
+                <Entry Placeholder="ingresa tu ocupacion"/>
+            </StackLayout>
+            
+            <Button Text="+" Clicked="Button_ClickedOccupationPlus"/>
+            
+            <StackLayout Orientation="Vertical">
+                <Label Text="Address:" x:Name="Direccion"/>
+                <Entry Placeholder="Ingresa tu direccion" />
+            </StackLayout>
+            
+            <StackLayout>
+                <Button Text="Aceptar" Clicked="ButtonSubmitClicked"></Button>
+            </StackLayout>
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

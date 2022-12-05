@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page1"
+             >
+             
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="{Binding MainContentProperty}" TextColor="Black" BackgroundColor="DarkGray" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            <Label Text="sadasd asdadadad asd" TextColor="white" BackgroundColor="LightGray" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            <Label Text="Lorem ipsum" FontSize="Large" Grid.Row="1" Grid.Column="2" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
